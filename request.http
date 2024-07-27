@@ -1,0 +1,24 @@
+###Create user
+POST http://localhost:3000/users/create-user
+Content-Type: application/json
+
+{
+    "email": "asdf@asdf.com",
+    "name": "name1"
+}
+
+###Find a user
+GET  http://localhost:3000/users/2
+
+###Update user
+
+PATCH http://localhost:3000/users/2
+Content-Type: application/json
+
+{
+    "email": "abcd@abcd.com",
+    "name": "testing"
+}
+
+###Remove a user
+DELETE http://localhost:3000/users/2
